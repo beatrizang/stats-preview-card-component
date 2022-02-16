@@ -3,11 +3,15 @@
     <head>
       <title>Stats Preview Card - Frontend Mentor</title>
       <link rel="icon" href="images/favicon-32x32.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Didact+Gothic&family=Dongle:wght@300;400&family=Inter:wght@400;700&family=Lexend+Deca&family=Merriweather:wght@300&family=Outfit:wght@300;400;600&family=Parisienne&family=Red+Hat+Display:wght@500;700;900&family=Roboto:ital@1&family=Tangerine:wght@700&family=Yellowtail&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="style.css">
     </head>
     <body>
       <main class="container">
         <div id="text">
-          <h1>Get insights that help your business grow.</h1>
+          <h1>Get <span class="accent">insights</span> that help your business grow.</h1>
           <p>Discover the benfits of data analytics and make better decisions regarding revenue, 
           customer experience, and overall efficiency.</p>
           <div class="numbers">
@@ -19,15 +23,15 @@
               <h4>314</h4>
               <p>TEMPLATES</p>
             </div>
-            <div>
-              <h4>14M+</h4>
+            <div class="number">
+              <h4>12M+</h4>
               <p>QUERIES</p>
             </div>
           </div>
         </div>
-        <div id="img">
-          <img src="images/image-header-desktop.jpg" alt="companie image">
-        </div>
+          <img src="images/image-header-desktop.jpg" alt="companie image" class="img-dektop">
+          <img src="images/image-header-mobile.jpg" alt="companie image" class="img-mobile">
       </main>
+  
     </body>
 </html>
