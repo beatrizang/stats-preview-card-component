@@ -24,6 +24,7 @@ a:hover{
 
 body{
     display: flex;
+    flex-direction: column;
     background-color: var(--very-dark-blue);
     font-size: 15px;
     width: 100%;
@@ -84,7 +85,50 @@ img{
 }
 
 footer{
+    margin-top: 10px;
     color: var(--white);
     font-family: 'Inter', sans-serif;
     text-align: center;
+}
+
+@media screen and (max-width: 1260px){
+    
+
+    .container{
+        flex-direction: column-reverse;
+        max-width: 40%;
+    }
+
+    #text {
+        width: 100%; 
+        flex-direction: column;
+        border-radius: 0 0 10px 10px;
+        text-align: center;
+        padding: 2.5em;
+    }
+    
+    #text p{
+        padding: 1.1em;
+    }
+
+    .img-dektop{
+        display: none;
+        
+    }
+
+    .img-mobile{
+        display: inline;
+        border-radius: 10px 10px 0 0;
+    }
+
+    
+    .numbers{
+        flex-direction: column; 
+        align-items: center;
+        
+    }
+
+    .number{
+        padding: 1em;
+    }
 }
